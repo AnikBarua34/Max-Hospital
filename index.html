@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Hospital & Diagnostic Ltd.</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/452a759896.js" crossorigin="anonymous"></script>
+    <style>
+        /* NABVAR STARTING  */
+        .nav-item:hover a {
+            background-color: lawngreen;
+            font-weight: 700;
+            height: 100%;
+
+        }
+
+        .dropdown .btn {
+            background-color: lawngreen;
+            font-weight: 700;
+            height: 100%;
+
+        }
+
+        .collapse {
+            margin-left: 10%;
+        }
+
+        .nav-link {
+
+            padding-left: 30%;
+            font-weight: 700;
+
+        }
+
+        .container-fluid img {
+            margin-left: 30%;
+
+        }
+
+        .container-fluid:hover img {
+            transition: transform 2s;
+            transform: scale(1.2);
+        }
+
+        /* NAVBAR END  */
+
+        /* Box CONTAINER STYLE START  */
+
+        .box-container {
+
+            margin-top: 0%;
+            margin-left: 7%;
+            margin-right: 7%;
+            padding-top: 8%;
+        }
+
+        /* ICON STYLE STARTING */
+        .fas {
+            height: 30px;
+            font-weight: 700;
+            padding-top: 2%;
+            font-size: 30px;
+            color: white;
+        }
+
+        .far {
+            height: 30px;
+            font-weight: 500;
+            font-size: 50px;
+            color: white;
+            padding-top: 3%;
+        }
+
+        .fa-hand-holding-heart {
+            padding-top: 3%;
+            font-size: 50px;
+        }
+
+        .col:hover .fa-hand-holding-heart {
+            transition: transform 0.9s;
+            transform: rotate(360deg);
+
+        }
+
+        .fas.fa-plus-square {
+            font-size: 30px;
+        }
+
+        .col:hover .far {
+            transition: transform 0.9s;
+            transform: rotate(360deg);
+        }
+
+        .col:hover .fa-plus-square {
+            transition: transform 1s;
+            transform: scale(1.3);
+        }
+
+        .fas p {
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        .col h1 {
+            font-size: 25px;
+        }
+
+        /* ICON STYLE END  */
+
+        /* SLIDER START */
+        .carousel {
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 3%;
+            border: 10px;
+        }
+
+        /* text starting */
+        .text-container {
+            margin-top: 0%;
+            margin-left: 7%;
+            margin-right: 7%;
+            padding-top: 8%;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .text-container .fa-hand-point-right {
+            color: whitesmoke;
+            font-weight: 500;
+
+        }
+
+        .story {
+            border-bottom: solid;
+        }
+
+        .head {
+            display: flex;
+            align-items: center;
+            background: green;
+            border-bottom: solid;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        /* foot section 
+         */
+
+        .foot {
+            background: black;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+
+        .foot h6 {
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+
+        .foot a {
+            font-weight: 700;
+            font-size: 40px;
+
+        }
+
+        .foot:hover .fa-facebook {
+            transition: transform 0.9s;
+            transform: scale(1.3);
+        }
+
+        .foot:hover .fa-instagram {
+            transition: transform 0.9s;
+            transform: rotate(360deg);
+        }
+
+        .foot:hover .fa-twitter {
+            transition: transform 0.9s;
+            transform: rotate(360deg);
+        }
+
+        .fa-facebook {
+            color: white;
+            font-size: 50px;
+        }
+
+        .container-fluid:hover .fa-facebook {
+            transition: transform 2s;
+            transform: rotate(360deg);
+        }
+
+        .carousel {
+            margin-left: 30%;
+            margin-right: 20%;
+            margin-top: 0%;
+            height: 10%;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid bg-success py-2">
+                <div>
+                    <img src="images/max-logo.png" alt="">
+                </div>
+
+                <div class=" collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link active" href="http://maxhospitalbd.com/about-us/">About
+                                Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link active" href="#">Department</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link active" href="http://maxhospitalbd.com/our-doctors/">Our
+                                Doctors</a>
+                        </li>
+                        <div class="dropdown">
+                            <button class="btn btn-success text-dark fw-bold dropdown-toggle" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a target="_blank" class="dropdown-item"
+                                        href="http://maxhospitalbd.com/hospital-services/">Hospital Services</a></li>
+                                <li><a target="_blank" class="dropdown-item"
+                                        href="http://maxhospitalbd.com/diagnostic-service/">Diagnostic Services</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-success text-dark fw-bold dropdown-toggle" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Gallery
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a target="_blank" class="dropdown-item"
+                                        href="http://maxhospitalbd.com/video-gallery/">Video Gallery</a></li>
+                                <li><a target="_blank" class="dropdown-item"
+                                        href="http://maxhospitalbd.com/media-gallery/">Audio Gallery</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-success text-dark fw-bold dropdown-toggle" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Packages
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a target="_blank" class="dropdown-item"
+                                        href="http://maxhospitalbd.com/max-packages/">Special Packages</a></li>
+                                <li><a target="_blank" class="dropdown-item"
+                                        href="http://maxhospitalbd.com/packages/">Other Package</a></li>
+
+                            </ul>
+                        </div>
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link active"
+                                href="http://maxhospitalbd.com/current-oppurtunities/">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank" class="nav-link active"
+                                href="http://maxhospitalbd.com/conatcts/">Contacts</a>
+                        </li>
+                        <li class="nav-item-fb">
+                            <a target="_blank" href="https://www.facebook.com/turjoy2/"><i
+                                    class="fab fa-facebook"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="box-container">
+
+        <div class="row">
+
+            <div class="col col-lg-3 col-12 w-10 h-20 text-center bg-success border border-4 ">
+
+                <h2><i class="far fa-clock"></i><br></h2>
+                <h1>Make an Appoinment</h1>
+
+                <a target="_blank" href="http://maxhospitalbd.com/make-an-appoinment/">
+                    <h1><i class="fas fa-plus-square">
+                            <p>Read More</p>
+                        </i>
+                        <h1>
+
+                </a>
+
+
+            </div>
+            <div class="col col-lg-3 col-12 w-10 h-20 text-center bg-success border border-4 ">
+
+                <h2><i class="fas fa-hand-holding-heart"></i><br></h2>
+                <h1>Our Packages</h1>
+
+                <a target="_blank" href="http://maxhospitalbd.com/max-packages/">
+                    <h1><i class="fas fa-plus-square">
+                            <p>Read More</p>
+                        </i>
+                        <h1>
+
+                </a>
+
+
+            </div>
+            <div class="col col-lg-3 col-12 w-10 h-20 text-center bg-success border border-4 ">
+
+                <h2><i class="far fa-images"></i><br></h2>
+                <h1>Our Gallary</h1>
+
+                <a target="_blank" href="http://maxhospitalbd.com/photo-gallery-2/">
+                    <h1><i class="fas fa-plus-square">
+                            <p>Read More</p>
+                        </i>
+                        <h1>
+
+                </a>
+
+
+            </div>
+            <div class="col col-lg-3 col-12 w-10 h-20 text-center bg-success border border-4 ">
+
+                <h2><i class="far fa-comment-dots"></i><br></h2>
+                <h1>Online Help</h1>
+
+                <a target="_blank" href="http://maxhospitalbd.com/online-help/">
+                    <h1><i class="fas fa-plus-square">
+                            <p>Read More</p>
+                        </i>
+                        <h1>
+
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SlIDER STARTING  -->
+
+    <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" data-bs-interval="1500">
+                <img class="img-fluid" src="images/new/sir (1).png" class=" d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item " data-bs-interval="1500">
+                <img class="img-fluid" src="images/new/mosiur sir.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img class="img-fluid" src="images/new/ashit sir.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img class="img-fluid" src="images/new/nurul sir.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img class="img-fluid" src="images/new/gm sir.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img class="img-fluid" src="images/new/hannan1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img class="img-fluid" src="images/new/185357701_2933354090319181_185467499456734569_n.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section class="text-container">
+        <div class="story ">
+            <div class="head">
+
+
+                <div>
+                    <i class="far fa-hand-point-right"></i>
+                </div>
+
+                <div>
+                    <h1>Our Story</h1>
+                </div>
+            </div>
+            <br>
+            <p>Chittagong officially known as Chattogram , is a major seaport city and financial centre in
+                southeastern
+                Bangladesh. The city has a population of more than 25 million while the metropolitan area has a
+                population
+                of 4.5 million, making it the second largest city in the country . After achieving the independence
+                in
+                1971
+                , the health sector of Bangladesh required a drastic improvement . Beside this existing
+                Govt.Hospitals
+                as
+                well as private hospital can not meet the mass peoples ‘ health services with maintaining world
+                class
+                standard . As a result some renowned well experienced and specialist doctor’s under the leadership
+                of
+                Dr. Md
+                Liakat Ali Khan was gathered to establish a new multispecialty international standard hospital in
+                Chattogram
+                to provide excellence health service’s for the inhabitants of greater Chattogram. <br>
+
+
+                Today Max Hospital and diagnostics limited is one of the leading hospital in Bangladesh improving
+                and
+                providing healthcare services kind heart and the safest way possible . Located at the heart of
+                Chattogram
+                city, Max Hospital and Diagnostics Limited has started its journey on 1st July , 2014 with an aim to
+                provide
+                the best health care services . Max Hospital and Diagnostic Limited make great efforts for
+                continuous
+                quality improvement and comply with international standards to implement quality systems in
+                accordance
+                with
+                international standards . Max Hospital and Diagnostics combines the use of the latest medical
+                technology
+                and
+                highly specialized doctors in order to provide high quality treatment . We always tend to keep our
+                patient’s
+                health as our priority.
+
+            </p>
+        </div>
+
+        <!-- FOcus section Start  -->
+
+
+        <div class="focus">
+            <div class="head">
+
+
+                <div>
+                    <i class="far fa-hand-point-right"></i>
+                </div>
+
+                <div>
+                    <h1>Our Focus</h1>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="flex">
+                <div>
+                    <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                </div>
+                <div>
+                    <p>Prioritize the patient’s comfort and convenience at each stage at their journey.</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div>
+                    <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                </div>
+                <div>
+                    <p>Cutting –Edge Technology.</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div>
+                    <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                </div>
+                <div>
+                    <p>Transparent pricing.</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div>
+                    <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                </div>
+                <div>
+                    <p>Coordinated care.</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="head">
+
+
+                <div>
+                    <i class="far fa-hand-point-right"></i>
+                </div>
+
+                <div>
+                    <h1>Our Services</h1>
+                </div>
+            </div>
+            <br>
+            <p>We at Max Hospital are committed to providing the best service through continual improvements of
+                our systems , processes and technology .there are main two services as following –</p>
+
+            <div class="flex">
+                <div>
+                    <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                </div>
+                <div>
+                    <p>Hospital services..</p>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div>
+                    <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                </div>
+                <div>
+                    <p>Diagnostic services..</p>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="head">
+
+
+                <div>
+                    <i class="far fa-hand-point-right"></i>
+                </div>
+
+                <!-- Hospital & Diagnostic Services -->
+                <div>
+                    <h1>Hospital & Diagnostic Services</h1>
+                </div>
+            </div>
+            <br>
+
+            <div class="col-container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-success">[Hospital Services:]</h1>
+
+                        <!-- Hospital  -->
+
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>0ut Patient-Door(OPD).</p>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Emergency Care.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Intensive Care Unit (ICU).</p>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>High Dependency Unit (HDU).</p>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Coronary Care Unit (CCU).</p>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Post Coronary Care Unit(PCCU).</p>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Neonatal Intensive Care Unit(NICU)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Pediatric Intensive Care Unit(PICU).</p>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Operation Theater.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Post Operation Unit.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Labour Observation Unit.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Baby Care.</p>
+                            </div>
+                        </div>
+
+                        <!-- Hospital END  -->
+                    </div>
+                    <div class="col">
+                        <h1 class="text-success"> [Diagnostic Services:]</h1><br>
+                        <h1 class="text-dark">Laboratory Test:</h1>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Biochemestry.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Hormone test.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Pathology</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Microbiology.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Serology.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Cytopathology.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Histopathology.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Hematology.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Clinical Pathology.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Immunology..</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Spirometry.</p>
+                            </div>
+                        </div>
+
+                        <!-- DIgnostic ENd  -->
+
+                    </div>
+                    <div class="col">
+                        <h1> Radio &imaging:</h1>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Temporary Pacemakers (TP).</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Cath Lab.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Magnetic Resonance Imaging(MRI).</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Ultrasonography.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Endoscopy.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Colonoscopy.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Echocardiography.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Color Doppler.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Electrocardiogram (ECG).</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Electroencephalogram (EEG)</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Exercise Treadmill Test(ETT).</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Holter Monitoring.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Other Service Start  -->
+                    <div class="col">
+                        <h1 class="text-success">Other Services</h1>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Pharmacy(Indoor).</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Infertility Center.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fas fa-long-arrow-alt-right text-dark"></i>
+                            </div>
+                            <div>
+                                <p>Doctors chamber.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+<!-- Foter START  -->
+<footer>
+    <div class="foot">
+        <h6 class="text-center text-light">WEBSITE OWNER @ ANIK_BARUA_TURJOY</h6>
+        <p class="text-center text-light">Main Website: maxhospitalbd.com</p>
+        <h6 class="text-center text-light">
+            <a target="_blank" href="https://www.facebook.com/turjoy2/"><i class="fab fa-facebook"></i></a>
+            <a target="_blank" href=""><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href=""><i class="fab fa-twitter"></i></a>
+        </h6>
+        <h6 class="text-center text-light">Contact: 0178 110 4445</h6>
+    </div>
+</footer>
+
+</html>
